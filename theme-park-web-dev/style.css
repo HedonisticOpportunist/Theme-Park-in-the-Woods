@@ -1,0 +1,162 @@
+/* body styles */
+body {
+    margin: 0;
+    font-family: 'Lucida Console', Courier, monospace;
+    font-variant: normal;
+    font-size: 20px;
+    min-width: 1000px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/*header styling*/
+header{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    background-color: #121212;
+    border-bottom: 1px solid #6C1F28;
+    text-align: left;
+    padding: 10px;   
+}
+
+/*navigation*/ 
+nav ol{
+    border: 1px solid #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+nav li a {
+    font-weight: normal;
+    text-decoration: none;
+    color: #fff;
+    display:inline-block;
+    padding: 5px 10px;
+    border: 1px solid #6C1F28;
+    border-radius: 5px;
+}
+
+/* Top page*/
+main {
+    color: #eaeaad;
+    background: #333333;
+}
+
+.hero {
+    background-image: url(./images/hero.jpg);
+    background-size: cover;
+    background-position: left center;
+    padding: 80px 20px;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-button {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #222;
+    background-color: #E9EAAD;
+    border: 1px solid #E9EAAD;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+    margin-top: 10px;
+}
+
+
+.content {
+    padding: 20px;
+}
+
+.content h3 {
+    margin: 3em 0 1em;
+}
+
+/*amentities page content*/
+.page-content {
+    font-size: 15px;
+}
+
+/* Layout for grid */
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.column {
+    width: 33.3%;
+    padding: 10px;
+}
+
+.column:first-of-type {
+    padding-left: 0;
+}
+
+.column:last-of-type {
+    padding-right: 0;
+}
+
+.column img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/*Footer */
+
+footer {
+    font-size: 0.8em;
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
+}
+
+footer address {
+    font-size: 0.8em;
+    font-style: normal;
+}
+
+.footer-top {
+    display: flex;
+}
+
+.footer-links {
+    color: #fff;
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline-block;
+}
+
+.footer-links li a {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
