@@ -1,162 +1,299 @@
-/* body styles */
+/* body styles written by Anita*/
 body {
-    margin: 0;
-    font-family: 'Lucida Console', Courier, monospace;
-    font-variant: normal;
-    font-size: 20px;
-    min-width: 1000px;
+  margin: 0;
+  font-family: 'Lucida Console', Courier, monospace;
+  font-variant: normal;
+  font-size: 20px;
+  min-width: 1000px;
 }
 
 p {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
-/*header styling*/
-header{
-    position: sticky;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0px;
-    background-color: #121212;
-    border-bottom: 1px solid #6C1F28;
-    text-align: left;
-    padding: 10px;   
+/*header styling written by Annita*/
+header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0px;
+  background-color: #121212;
+  border-bottom: 1px solid #6C1F28;
+  text-align: left;
+  padding: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
-/*navigation*/ 
-nav ol{
-    border: 1px solid #fff;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/*navigation written by Annita*/
+nav {
+  grid-area: nav;
 }
 
-nav li{
-    display: inline-block;
-    margin-left: 5px;
+/*this is the format for naviation ordered list*/
+nav ol {
+  border: 1px solid #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+/*this is the format for each item in the naviation list*/
+nav li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/*this is the format for links in the naviation list*/
 nav li a {
-    font-weight: normal;
-    text-decoration: none;
-    color: #fff;
-    display:inline-block;
-    padding: 5px 10px;
-    border: 1px solid #6C1F28;
-    border-radius: 5px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #6C1F28;
+  border-radius: 5px;
 }
 
-/* Top page*/
+/* Top page written by Annita*/
 main {
-    color: #eaeaad;
-    background: #333333;
+  color: #eaeaad;
+  background: #333333;
+  padding-bottom: 10%;
 }
 
+/*this is the image format for the banner image on the home page */
 .hero {
-    background-image: url(./images/hero.jpg);
-    background-size: cover;
-    background-position: left center;
-    padding: 80px 20px;
-    color: #fff;
+  background-image: url(./images/hero.jpg);
+  background-size: cover;
+  background-position: left center;
+  padding: 80px 20px;
+  color: #fff;
 }
 
+/*this is the header text format to overlay ove ther banner image by William*/
 .hero h1 {
-    font-size: 36px;
+  font-size: 38px;
+  font-weight: 900;
+  -webkit-text-stroke: 1.8px lime;
+}
+
+/*this is the subparagraph text format to overlay ove ther banner image by William*/
+.hero p {
+  font-size: 24px;
+  font-weight: bolder;
+  -webkit-text-stroke: 1.2px lime;
 }
 
 .hero-text {
-    max-width: 600px;
+  max-width: 600px;
+  margin-left: 10%;
+  width: 80%;
 }
 
+/* hero-button that allows for the button to be animated for 40 seconds, written by William*/
 .hero-button {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    color: #222;
-    background-color: #E9EAAD;
-    border: 1px solid #E9EAAD;
-    padding: 10px 15px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
-    margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #222;
+  background-color: #E9EAAD;
+  border: 1px solid #E9EAAD;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  animation-name: animateHeroButton;
+  animation-duration: 40s;
 }
 
+/* button animation that alters color based on the % of time for each color written below, it will cycle through the colors until the last red color, written by William*/
+@keyframes animateHeroButton {
+  0% {
+    background-color: red;
+    color: white
+  }
+
+  8.33% {
+    background-color: pink;
+    color: black
+  }
+
+  16.66% {
+    background-color: orange;
+    color: black
+  }
+
+  25% {
+    background-color: yellow;
+    color: black
+  }
+
+  33.33% {
+    background-color: purple;
+    color: white
+  }
+
+  41.66% {
+    background-color: blue;
+    color: white
+  }
+
+  50% {
+    background-color: green;
+    color: white
+  }
+
+  58.33% {
+    background-color: blue;
+    color: white
+  }
+
+  66.66% {
+    background-color: purple;
+    color: white
+  }
+
+  75% {
+    background-color: yellow;
+    color: black
+  }
+
+  83.33% {
+    background-color: orange;
+    color: black
+  }
+
+  91.66% {
+    background-color: pink;
+    color: black
+  }
+
+  100% {
+    background-color: red;
+    color: white
+  }
+}
 
 .content {
-    padding: 20px;
+  padding: 20px;
+  margin: auto;
+  width: 80%;
 }
 
 .content h3 {
-    margin: 3em 0 1em;
+  margin: 3em 0 1em;
+  font-weight: bold;
+  font-size: 1.6em;
 }
 
-/*amentities page content*/
+/*amentities page content written by Anita*/
 .page-content {
-    font-size: 15px;
+  font-size: 15px;
 }
 
-/* Layout for grid */
+/* Layout for grid written by William*/
+.ticketing {
+  grid-area: ticketing;
+  padding: 15%;
+  margin-bottom: -12.5%;
+  background-color: grey;
+}
+
+/* Layout written by William*/
+.attractionDetail {
+  grid-area: attraction;
+  padding: 2%;
+}
+
+/* Ticketing Grid that allows for having 2 coloumns on the page and the nav bar and footer section span the entire page, written by William*/
+.grid-container-index {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-areas:
+    'nav nav nav nav nav nav nav'
+    'attraction attraction attraction attraction ticketing ticketing ticketing'
+}
+
+/*Creates a flex container for a set of images and related text in the homepage, written by Anita*/
 .container {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
+/*sets the format for the aforementioned container, written by Anita*/
 .column {
-    width: 33.3%;
-    padding: 10px;
+  width: 33.3%;
+  padding: 10px;
 }
 
 .column:first-of-type {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .column:last-of-type {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 .column img {
-    width: 100%;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-/*Footer */
+/*Creates a container for a set of images and related text in the amenities page, written by William*/
+.imageBlocks {
+  display: block;
+  height: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14.5px;
+}
 
+.floatImage {
+  float: left;
+  margin: 0, 2%, 2%, 2%;
+  padding-right: 2%;
+}
+
+/* Sets the format for the footer, created by Anita*/
 footer {
-    font-size: 0.8em;
-    background-color: #121212;
-    color: #fff;
-    padding: 20px;
+  font-size: 0.8em;
+  background-color: #121212;
+  color: #fff;
+  padding: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 footer address {
-    font-size: 0.8em;
-    font-style: normal;
+  font-size: 0.8em;
+  font-style: normal;
 }
 
 .footer-top {
-    display: flex;
+  display: flex;
 }
 
 .footer-links {
-    color: #fff;
-    list-style: none;
+  color: #fff;
+  list-style: none;
 }
 
 .footer-links li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .footer-links li a {
-    color: #fff;
-    margin-right: 10px;
+  color: #fff;
+  margin-right: 10px;
 }
 
 .footer-bottom {
-    margin-top: 1em;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
 }

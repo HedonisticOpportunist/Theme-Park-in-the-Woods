@@ -1,100 +1,102 @@
 <!DOCTYPE html>
-<html lang= "en">
+<html lang="en">
 
-<!-- The header contains all the meta data (aka non visible info) -->
+<!-- The header contains all the meta data (aka non visible info) this links this html homepage to the style.css file for referencing format and style for this page -->
+
 <head>
-<title>Theme Park in the Woods - Main</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta charset="UTF-8">
-<meta name="description" content="Horror Theme Park Site - a theme park that specialises in horror">
-<meta name="keywords" content="Horror, Vampire, Halloween, Zombies, Night, Terror, Dark, Gothic, Theme park, Enterntaintment">
-<meta name="author" content="Anita">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="refresh" content="600">
+  <title>Theme Park in the Woods - Main</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="Horror Theme Park Site - a theme park that specialises in horror">
+  <meta name="keywords" content="Horror, Vampire, Halloween, Zombies, Night, Terror, Dark, Gothic, Theme park, Enterntaintment">
+  <meta name="author" content="Anita, William, Annie">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600">
 </head>
-      
+
 <body>
-    <!-- header -->
-    <header>
-        <a href="/">
-            <img src="images/logo.jpg" alt="Theme park logo" height="50">
-        </a>
-        <!-- navigation / menu -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Top</a></li>
-                <li><a href="attractions.html">Attractions</a></li>
-                <li><a href="amenities.html">Amenities</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- introduction area -->
-    <main>
-        <div class="hero">
-            <div class="hero-text">
-                <h1>Welcome to the Theme Park in the Woods - your top destination for all your horror thrills!</h1>
-                <p>Do you like to be scared?
-                <br/>
-                Then you have come the right place. Here, at <b>Theme Park in the Woods</b> we aim to scare.</p>
-                <a class="hero-button" href="attractions.html" target="blank">Check our attractions</a>
-            </div>
-        </div>
-        <!-- Rides of the Month -->
-        <div class="content">
-            <h3>Rides of the Month </h3>
-            <ul class="container">
-                <li class="column">
-                    <img src="images/rollercoaster.jpg"/>
-                    The Hellblazer Rollercoaster - dive into the deepest pits of hell!
-                </li>
-                <li class="column">
-                    <img src="images/axe.jpg"/>
-                    The Massacre House - Experience the horrors of being trapped with an axe killer!
-                </li>
-                <li class="column">
-                    <img src="images/zombies.jpg"/>
-                    Zombie Cave - See if you can fight the battle against zombies"
-                </li>
-            </ul>
-            <!-- Page Content -->
-            <div class="page-content">
-                <h3>Upcoming Events</h3>
-                <p>
-                <ul>
-                    <li>Our weekly Rocky Horror special!</li>
-                    <li>Celebrate the 20th Anniversary of 'Evil Dead'</li>
-                    <li>Silent Hill Party on Sunday!</li>
-                </ul>
-                </p>
-                <h3>About the Park</h3>
-                <p>
-                    We are located in the lovely forest of Bracken Wheels - a place that's as spooky as it is beautiful. We are open 24 hours a day, with entrance for children  permitted till 10 o'clock. 
-                </p>
-        </div>
-        <!-- Map -->
-        <iframe 
-                width="300" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=300&amp;height=200&amp;hl=en&amp;q=109%20Argyll%20Road%20Swansea+(Theme%20Park%20in%20the%20Woods)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-        </iframe> 
-        <a href='https://www.add-map.net/'>how to embed google maps</a> 
-        <script 
-                type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=0c1eddbfc58feff4e218fd24628132586fecdcd4'>
-        </script>
-        </div>
-    </main>
-    <!--Footer --->
-    <footer>
-        <div class="footer-top">
-            <a href="/"><img src="images/logo.jpg" alt="Theme park logo" height="40"></a>
-            <ul class="footer-links">
-                <li><a href="index.html">Top</a></li>
-                <li><a href="attractions.html">Attractions</a></li>
-                <li><a href="amenities.html">Amenities</a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <address>109 Argyll Road, Swansea, SA4LU. Tel: 078 0988 3733</address>
-            <small>@Copyright Theme Park in the Woods</small>
-        </div>
-    </footer>
-    </body>
+  <!-- header - creates an area for the navigation bar as well as the logo and some padding for this section-->
+  <header>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Theme park logo" height="50">
+    </a>
+    <!-- This creates the navigation menu  which links to the other pages.  It also allows the user to go back to the top of the homepage when they scroll too far down.  The Nav bar will float on the screen even as the user scrolls down-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Top</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="amenities.html">Amenities</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- introduction area - introduces the park as well as an animated button that allows the user to see the attractions, the call to action is on the attractions page-->
+  <main>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Welcome to the Theme Park in the Woods - your top destination for all your horror thrills!</h1>
+        <p>Do you like to be scared?
+          <br />
+          Then you have come the right place. Here, at <b>Theme Park in the Woods</b> we aim to scare.</p>
+        <a class="hero-button" href="attractions.html" target="blank">Check Our Attractions</a>
+      </div>
+    </div>
+    <!-- Rides of the Month - contains the pictures for the rides and a description of what the ride entails uses a flex grid system that is set up in the CSS file -->
+    <div class="content">
+      <h3>Rides of the Month </h3>
+      <ul class="container">
+        <li class="column">
+          <img src="images/rollercoaster.jpg" />
+          The Hellblazer Rollercoaster - dive into the deepest pits of hell!
+        </li>
+        <li class="column">
+          <img src="images/axe.jpg" />
+          The Massacre House - Experience the horrors of being trapped with an axe killer!
+        </li>
+        <li class="column">
+          <img src="images/zombies.jpg" />
+          Zombie Cave - See if you can fight the battle against zombies"
+        </li>
+      </ul>
+      <!-- Page Content - text descriptions of the park that is formated using the page-content class in the CSS-->
+      <div class="page-content">
+        <h3>Upcoming Events</h3>
+        <p>
+        <ul>
+          <li>Our weekly Rocky Horror special!</li>
+          <li>Celebrate the 20th Anniversary of 'Evil Dead'</li>
+          <li>Silent Hill Party on Sunday!</li>
+        </ul>
+        </p>
+        <h3>About the Park</h3>
+        <p>
+          We are located in the lovely forest of Bracken Wheels - a place that's as spooky as it is beautiful. We are open 24 hours a day, with entrance for children permitted till 10 o'clock.
+        </p>
+      </div>
+      <!-- Map - retrieves a map from add-map.net that allows the user to move around and see the location of the park as well as nearby areas-->
+      <iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+        src="https://maps.google.com/maps?width=300&amp;height=200&amp;hl=en&amp;q=109%20Argyll%20Road%20Swansea+(Theme%20Park%20in%20the%20Woods)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+      </iframe>
+      <a href='https://www.add-map.net/'>
+        <!--how to embed google maps--></a>
+      <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=0c1eddbfc58feff4e218fd24628132586fecdcd4'>
+      </script>
+    </div>
+  </main>
+  <!--Footer - a footer that contains links to the 3 pages as well as the location of the park and logo.  Clicking on the logo will get the user back on the main page--->
+  <footer>
+    <div class="footer-top">
+      <a href="index.html"><img src="images/logo.png" alt="Theme park logo" height="40"></a>
+      <ul class="footer-links">
+        <li><a href="index.html">Top</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="amenities.html">Amenities</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <address>109 Argyll Road, Swansea, SA4LU. Tel: 078 0988 3733</address>
+      <small>@Copyright Theme Park in the Woods</small>
+    </div>
+  </footer>
+</body>
+
 </html>
