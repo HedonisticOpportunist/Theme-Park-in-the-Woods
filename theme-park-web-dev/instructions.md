@@ -1,4 +1,3 @@
-\#web_dev
 OVERVIEW
 The material that you prepared as a team in all four parts of the team assignment and revised after the peer review activity must be submitted here by one student on behalf of the group.
 
