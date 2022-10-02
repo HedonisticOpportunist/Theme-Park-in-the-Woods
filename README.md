@@ -1,5 +1,5 @@
 # web_dev
-Website written with a team for Web Developlment 2019/2020 (UoL) / https://london.ac.uk/courses/web-development.
+A website written with a team for the module: Web Developlment 2019/2020 (University of London) / https://london.ac.uk/courses/web-development.
 
 URL: 
 
